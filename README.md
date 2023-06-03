@@ -92,8 +92,8 @@ The goal is to run a container with our app on Kubernates. Let's say our Example
     |Parameter            | Description      |
     |--------------------|------------------|
     | `.` | Working directory, the build context |
-    | `-f docker/application/Dockerfile` | relative path to the Dockerfile |
-    | `-t exampleapp` | the target image tag |
+    | `-f docker/application/Dockerfile` | Relative path to the Dockerfile |
+    | `-t exampleapp` | The target image tag |
     Details on how to build Docker images can be found here: 
     https://docs.docker.com/engine/reference/builder/
 
