@@ -36,7 +36,7 @@ Nordlys app developers.
 
 The goal is to run a container with our app on Kubernates. Let's say our ExampleApp will accept requests on 8800 port.
 
-1. Create a directory and subdirectories
+1. Create a directory and subdirectories.
 
     ```sh
     mkdir quickstart_docker
@@ -67,7 +67,7 @@ The goal is to run a container with our app on Kubernates. Let's say our Example
     httpd.serve_forever()
     ```
 
-3. Create a file `Dockerfile` in `quickstart_docker/docker/application`
+3. Create a file `Dockerfile` in `quickstart_docker/docker/application`.
 
     ```dockerfile
     # Use base image from the registry
@@ -97,7 +97,7 @@ The goal is to run a container with our app on Kubernates. Let's say our Example
     Details on how to build Docker images can be found here: 
     https://docs.docker.com/engine/reference/builder/
 
-5. Then we check the list of images;
+5. Then, we check the list of images;
     ```sh
     docker images
     ```
@@ -108,4 +108,4 @@ The goal is to run a container with our app on Kubernates. Let's say our Example
     python               3.6     05sob8636w3f    6 weeks ago       153 MB         
    ```
 
-6. Next we will put the image into the registry
+6. Next, we will put the image into the registry.
