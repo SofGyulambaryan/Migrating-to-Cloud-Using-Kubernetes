@@ -14,12 +14,12 @@ completion-time: 30m
 
 ## Overview
 
-Nordlys is  migrating its application to a cloud infrastructure using Kubernetes. This document will provide short description on how to prepare a sample application, working environment and then deploy the image.  
+Nordlys is migrating its application to a cloud infrastructure using Kubernetes. This document will provide short description on how to prepare a sample application, working environment and then deploy the image.  
 
 ## Objectives
 
-- Create a Dockerfile for your app to build a docker image.
-- Deploy your app image into Kubernetes cluster.
+- Create a Dockerfile for your app to build a Docker image.
+- Deploy your app image into the Kubernetes cluster.
 
 ## Audience
 
@@ -34,7 +34,7 @@ Nordlys app developers.
 
 ## Running a container with an app in a Kubernetes cluster
 
-The goal is to run a container with our app on Kubernates. Let's say our ExampleApp will accept requests on 8800 port.
+The goal is to run a container with our app on Kubernetes. Let's say our ExampleApp will accept requests on 8800 port.
 
 1. Create a directory and subdirectories.
 
@@ -89,11 +89,13 @@ The goal is to run a container with our app on Kubernates. Let's say our Example
     ```sh
     docker build . -f docker/application/Dockerfile -t exampleapp
     ```
+    
     |Parameter            | Description      |
     |--------------------|------------------|
     | `.` | Working directory, the build context |
     | `-f docker/application/Dockerfile` | Relative path to the Dockerfile |
     | `-t exampleapp` | The target image tag |
+
     Details on how to build Docker images can be found here: 
     https://docs.docker.com/engine/reference/builder/
 
